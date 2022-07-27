@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link href="\static\main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form action="{{ url_for('base_page')}}" method="post">
+      input: <input type="text" name="input" id = "in" placeholder = "smth"><br>
+      <button id = "button" type = "submit">enter</button>
+      <!--input type="submit" value="Submit"-->
+    </form>
+    <span>{{ output }}</span>
+    <script src="script.js">
+      document.getElementById("button").onclick = function() {
+        //document.getElementById("in").value = ""
+      }
+    </script>
+  </body>
+
+</html>
